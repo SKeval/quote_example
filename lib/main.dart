@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quote_ex/Quote.dart';
+import 'package:quote_ex/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Quote(),
+      home: const splash(),
     );
   }
 }
