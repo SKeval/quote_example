@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -13,7 +15,7 @@ class splash extends StatefulWidget {
 class _splashState extends State<splash> {
   showTimer() {
     Timer(const Duration(seconds: 4), () {
-      Navigator.push(
+      Navigator.pushReplacement(
           context,
           MaterialPageRoute(
             builder: (context) => const Quote(),
@@ -23,7 +25,6 @@ class _splashState extends State<splash> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     showTimer();
   }
